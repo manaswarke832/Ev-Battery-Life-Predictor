@@ -5,7 +5,7 @@ import joblib
 
 # Load the productionized automated inference pipeline object file
 try:
-    production_pipeline = joblib.load('optimized ev battery pipeline.pkl')
+    production_pipeline = joblib.load('optimized_ev_battery_pipeline.pkl')
 except Exception as loading_error:
     st.error(f"Failed to extract the integrated pipeline binary component: {loading_error}")
 
